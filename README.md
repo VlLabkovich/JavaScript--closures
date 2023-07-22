@@ -1,1 +1,1 @@
-# JavaScript--losures
+# JavaScript--closures
