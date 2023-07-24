@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function countNumbers () {
+            let count = 0;
+            return function () {
+            console.log(count++);
+            }
+        };  
+
+        let count = 10; // переменной count переприсвоено значение 10 в глобальной области видимости, и при выполнении кода функции она игнорируется,
+                        // так как в родительской функции countNumbers ей присвоено значение 0.
+
+        const countInterval = setInterval((countNumbers()), 1000);
+
+        setTimeout(() => clearInterval(countInterval), 11000);
+
+    </script>
+
+</body>
+</html>
