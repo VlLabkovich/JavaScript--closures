@@ -1,1 +1,1 @@
-# JavaScript--closures
+# JavaScript-closures
